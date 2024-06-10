@@ -1,0 +1,11 @@
+.sort-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.ShopName {
+	font-size: 5em;
+	margin-left: 1.3em;
+}

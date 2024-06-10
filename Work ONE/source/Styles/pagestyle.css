@@ -1,0 +1,25 @@
+.info-containter > img {
+	width: 300px;
+	margin-right: 2em;
+}
+.name-containter > span {
+	font-size: 4em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.info-containter {
+	display: flex;
+	flex-direction: row;
+}
+@media (max-width: 1000px) {
+	.info-containter {
+		flex-direction: column;
+	}
+}
+.second-name {
+	font-size: 15px;
+	font-weight: 100;
+}
+.name-containter > p {
+	font-size: 1.5em;
+}

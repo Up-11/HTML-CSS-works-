@@ -1,0 +1,74 @@
+.main-container > h1 {
+	display: inline-flex;
+	max-width: 9em;
+	border-bottom: solid white 0.1em;
+	margin-bottom: 1.3em;
+}
+.main-container > h3 {
+	font-weight: 200;
+	display: flex;
+	flex-direction: row;
+	border-bottom: solid white 1px;
+	max-width: 20em;
+}
+.main-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.contaner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.box-container {
+	display: flex;
+	flex-direction: row;
+}
+@media (max-width: 1000px) {
+	.box-container {
+		flex-direction: column;
+		margin: auto;
+	}
+	.contaner {
+		margin: auto;
+	}
+	.input-container {
+		margin-top: 4em;
+	}
+}
+.cb-text {
+	border-bottom: solid white 0.1em;
+}
+.checkbox-container > h1 {
+	display: inline;
+	max-width: 9em;
+
+	margin-bottom: 2em;
+}
+.checkbox-container {
+	max-width: 400px;
+	border-radius: 15px;
+	background-color: rgba(66, 65, 65, 1);
+}
+.checkbox {
+	font-size: 25px;
+}
+.email-container {
+	color: white;
+	border-bottom: solid white 0.1em;
+}
+.input-email {
+	border: none;
+	font-size: 1.7em;
+}
+input {
+	outline: none;
+}
+.input-email::placeholder {
+	color: white;
+}
+.button {
+	background-color: gray;
+	padding: 0.5em 6.5em;
+}

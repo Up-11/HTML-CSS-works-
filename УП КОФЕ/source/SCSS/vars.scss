@@ -1,0 +1,24 @@
+$page-margin: 0 4em;
+$main-font-size: 20px;
+$head-font-size: 40px;
+$colors: (
+	950: #342116,
+	900: #61412d,
+	800: #774f35,
+	700: #93613b,
+	600: #b17845,
+	500: #bf8d50,
+	400: #caa36d,
+	300: #dac297,
+	200: #ebdfc7,
+	100: #f4eee0,
+	50: #faf7f2,
+);
+@each $name, $color in $colors {
+	.bg-#{$name} {
+		background-color: $color;
+	}
+	.c-#{$name} {
+		color: $color;
+	}
+}

@@ -1,0 +1,49 @@
+.navbar {
+	background: none !important;
+}
+.title {
+	font-size: 2.4em;
+	font-weight: 800;
+	color: rgba(172, 230, 213, 1) !important;
+}
+.nav-item a {
+	font-size: 1.5em;
+}
+.nav-item .dropdown-toggle {
+	font-size: 1.5em;
+	background: none !important;
+	border: none !important;
+}
+.signun-link {
+	background-color: #3e8e6b;
+	border-radius: 15px;
+	margin-left: 1em;
+	font-size: 1.5em;
+}
+.navbar-nav > .dropdown-menu {
+	width: 25px;
+}
+#scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #131417;
+	color: white;
+	width: 50px;
+	height: 50px;
+
+	text-align: center;
+	border-radius: 50%;
+	border: none;
+
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+#scroll-to-top:hover {
+	transform: scale(1.05);
+}
+#scroll-to-top.show {
+	opacity: 1;
+	pointer-events: auto;
+}

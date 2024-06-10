@@ -1,0 +1,180 @@
+.bg-950 {
+  background-color: #342116;
+}
+
+.c-950 {
+  color: #342116;
+}
+
+.bg-900 {
+  background-color: #61412d;
+}
+
+.c-900 {
+  color: #61412d;
+}
+
+.bg-800 {
+  background-color: #774f35;
+}
+
+.c-800 {
+  color: #774f35;
+}
+
+.bg-700, .button-container a:hover {
+  background-color: #93613b;
+}
+
+.c-700 {
+  color: #93613b;
+}
+
+.bg-600 {
+  background-color: #b17845;
+}
+
+.c-600 {
+  color: #b17845;
+}
+
+.bg-500, .button-container a {
+  background-color: #bf8d50;
+}
+
+.c-500 {
+  color: #bf8d50;
+}
+
+.bg-400 {
+  background-color: #caa36d;
+}
+
+.c-400 {
+  color: #caa36d;
+}
+
+.bg-300, .item-page {
+  background-color: #dac297;
+}
+
+.c-300 {
+  color: #dac297;
+}
+
+.bg-200 {
+  background-color: #ebdfc7;
+}
+
+.c-200 {
+  color: #ebdfc7;
+}
+
+.bg-100 {
+  background-color: #f4eee0;
+}
+
+.c-100 {
+  color: #f4eee0;
+}
+
+.bg-50 {
+  background-color: #faf7f2;
+}
+
+.c-50 {
+  color: #faf7f2;
+}
+
+.button-container a {
+  padding: 0.4em 2.2em;
+  border-radius: 5px;
+  color: whitesmoke;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.button-container .back-icon {
+  position: relative;
+  bottom: 2px;
+}
+
+.item-page {
+  padding-bottom: 10px;
+}
+.item-page .top-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: #caa36d solid;
+}
+.item-page .bi-three-dots {
+  cursor: pointer;
+}
+.item-page .side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.item-page .side h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+}
+.item-page .side h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+.item-page .side img {
+  width: 350px;
+}
+
+.bottom-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.bottom-page .b-side .sm-img {
+  position: relative;
+  top: 18px;
+  margin-left: 10px;
+}
+.bottom-page .b-side h5 {
+  font-weight: 300;
+  width: 200px;
+}
+.bottom-page .disc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.bottom-page .disc .after {
+  content: "";
+  cursor: pointer;
+}

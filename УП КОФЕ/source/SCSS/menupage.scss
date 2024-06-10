@@ -1,0 +1,255 @@
+@import 'vars';
+.menu-card-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.bottom-menu {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.vc-2 {
+		margin-top: 20px;
+		background-image: url(/source/content/img/sweetOP5.png);
+		background-repeat: no-repeat;
+	}
+	.vc-1 {
+		background-image: url(/source/content/img/Tea.png);
+		background-repeat: no-repeat;
+	}
+	.vertical-card-container {
+		margin-left: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.vertical-card {
+		width: 350px;
+		height: 190px;
+	}
+	.low-card-right {
+		margin-left: 1em;
+		width: 550px;
+		height: 400px;
+		background-image: url(/source/content/img/siropOP5.png);
+		background-repeat: no-repeat;
+	}
+	.low-card {
+		width: 350px;
+		height: 500px;
+		background-image: url(/source/content/img/cold-drinks-imgOP5.png);
+		background-repeat: no-repeat;
+	}
+	.up-card {
+		width: 1290px;
+		height: 200px;
+		border-radius: 20px;
+		background-image: url(/source/content/img/coffeImageOP5.png);
+		background-repeat: no-repeat;
+	}
+	@keyframes slide-right {
+		0% {
+			border-width: 0;
+			border-left-width: 0;
+			border-right-width: 0;
+		}
+		100% {
+			border-width: 2px 0 0 0;
+		}
+	}
+
+	.card-text {
+		margin-left: 10px;
+		@extend .c-200;
+		font-weight: bold;
+		font-size: 64px;
+		border-bottom: none;
+		padding-bottom: 10px;
+		margin-top: 70px;
+		cursor: pointer;
+		position: relative;
+	}
+
+	.card-text::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: #dac297;
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-in-out;
+	}
+
+	.menu-card {
+		transition: all 0.25s ease-in-out;
+		border-radius: 20px;
+	}
+
+	.menu-card:hover {
+		transform: scale(1.05);
+	}
+
+	.menu-card:hover .card-text::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+	@media (max-width: 1400px) {
+		.up-card {
+			width: 1075px;
+		}
+	}
+	@media (max-width: 1200px) {
+		.bottom-menu {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.menu {
+			display: flex;
+			justify-content: center;
+		}
+		.card-text {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.vertical-card-container {
+			margin-top: 10px;
+			margin-left: 0;
+		}
+		.vertical-card {
+			width: 350px;
+			height: 190px;
+		}
+		.low-card-right {
+			margin-left: 0;
+			margin-top: 15px;
+			width: 350px;
+			height: 300px;
+			background-image: url(/source/content/img/siropOP5.png);
+			background-repeat: no-repeat;
+		}
+		.low-card {
+			margin-top: -15px;
+			width: 350px;
+			height: 300px;
+			background-image: url(/source/content/img/cold-drinks-imgOP5.png);
+			background-repeat: no-repeat;
+			.low-text {
+				margin-bottom: 20px;
+			}
+		}
+		.up-card {
+			width: 350px;
+			height: 300px;
+			border-radius: 20px;
+			background-image: url(/source/content/img/coffeImageOP5.png);
+			background-repeat: no-repeat;
+		}
+	}
+}
+.menu-image {
+	width: 110px;
+}
+svg {
+	cursor: pointer;
+}
+.cup {
+	color: #caa36d;
+}
+.selected {
+	color: #342116;
+	/* background-color: black; */
+}
+.menu-items {
+	.top {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		border-bottom: #caa36d solid;
+		border-width: 1px;
+		padding-bottom: 5px;
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		.vars {
+			.cup {
+				margin: 0.1em 0.3em;
+			}
+			.c1 {
+				position: relative;
+				top: 3px;
+			}
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			.volume {
+				font-weight: 100;
+			}
+		}
+	}
+	.b-side {
+		.sm-img {
+			position: relative;
+			top: 18px;
+			margin-left: 10px;
+		}
+		h5 {
+			font-weight: 300;
+		}
+	}
+	.disc {
+		display: flex;
+		flex-direction: row;
+		.after {
+			content: '';
+			cursor: pointer;
+		}
+	}
+	.menu-item-grid {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 0px;
+		.item {
+			margin: 0.6em 0.2em;
+			width: 250px;
+			height: 300px;
+			@extend .bg-100;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			transition: all 0.25s ease-in-out;
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+		.item-disc {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			@extend .bg-200;
+			// h2{
+			// 	// font-size: сделать динамическим;
+
+			// }
+		}
+	}
+}
+.menu-image {
+	width: 110px;
+}

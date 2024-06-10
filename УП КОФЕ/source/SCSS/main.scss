@@ -1,0 +1,108 @@
+@import 'vars';
+.font-color {
+	color: #1c1c1c;
+}
+html {
+	scrollbar-color: #bf8d50 black;
+	scrollbar-width: thin;
+	animation: StartAnim 1s;
+	overflow-x: hidden;
+}
+.input {
+	padding: 0.4em 2.2em;
+	border-radius: 5px;
+	border-color: #93613b;
+	transition: all 0.15s ease-in-out;
+	box-shadow: none;
+	outline: none;
+	&:hover {
+		@extend .bg-50;
+	}
+}
+.title {
+	font-weight: 300;
+	font-size: 2em;
+	@extend .c-950;
+}
+a {
+	cursor: pointer;
+	color: #1c1c1c;
+	text-decoration: none;
+}
+a:visited,
+a:focus,
+a:hover {
+	color: #1c1c1c;
+}
+.heading {
+	font-size: $head-font-size;
+	font-weight: 400;
+}
+.main-text {
+	font-size: $main-font-size;
+	font-weight: normal;
+}
+.shadow {
+	box-shadow: 0px 4px 15px 0px #00000050;
+}
+.current-tab {
+	@extend .c-800;
+}
+h2 {
+	font-weight: 400;
+}
+h4 {
+	font-weight: 300;
+}
+
+.line-header {
+	@extend .c-500;
+	font-size: 50px;
+	font-weight: 400;
+	border-bottom: #caa36d solid;
+	border-width: 2px;
+	padding-bottom: 15px;
+}
+.line {
+	@extend .c-400;
+
+	border-bottom: #caa36d solid;
+	border-width: 2px;
+	padding-bottom: 15px;
+}
+.hidden {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.5s ease-in-out;
+}
+.m-page {
+	margin: $page-margin;
+}
+.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+#scroll-to-top {
+	position: fixed;
+	bottom: 25px;
+	right: 10px;
+	@extend .bg-700;
+	color: white;
+	width: 45px;
+	height: 45px;
+
+	text-align: center;
+	border-radius: 50%;
+	border: none;
+
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+#scroll-to-top:hover {
+	transform: scale(1.05);
+}
+#scroll-to-top.show {
+	opacity: 1;
+	pointer-events: auto;
+}

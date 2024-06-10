@@ -1,0 +1,45 @@
+@import 'vars';
+.bonus-page-top {
+	background-image: url(/source/content/img/bonus-image-bg.png);
+	height: 60vh;
+	max-width: 100%;
+}
+.content-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 100%;
+	.side {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		vertical-align: middle;
+		.qr-text {
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 950px) {
+	.qr-text {
+		display: none;
+	}
+	.disc-head {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}
+.content {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.disc-card {
+		max-width: 300px;
+	}
+	.head {
+		border-bottom: #caa36d solid;
+		border-width: 2px;
+		padding-bottom: 15px;
+	}
+}

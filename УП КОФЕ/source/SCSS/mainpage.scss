@@ -1,0 +1,37 @@
+@import 'vars';
+.card-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.card {
+		display: flex;
+		box-shadow: 0px 4px 15px 0px #00000050;
+		@extend .bg-50;
+		margin-top: 2em;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 300px;
+		.text-container {
+			height: 150px;
+		}
+		.image-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		img {
+			width: 250px;
+		}
+		a {
+			padding: 0.4em 2.2em;
+			border-radius: 5px;
+			color: whitesmoke;
+			@extend .bg-500;
+			transition: all 0.15s ease-in-out;
+			&:hover {
+				@extend .bg-700;
+			}
+		}
+	}
+}

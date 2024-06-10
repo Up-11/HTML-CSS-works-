@@ -1,0 +1,143 @@
+.price-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.upprice-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.pricelist-container {
+	display: block;
+}
+.price-main-container {
+	display: flex;
+	flex-direction: column;
+}
+.price-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: #131417;
+	padding: 2em 4em;
+	border-radius: 20px;
+	margin: 2em 2em;
+	width: 300px;
+	transition: transform 0.3s ease-in-out;
+	cursor: default;
+}
+.price-card:hover {
+	transform: scale(1.05);
+}
+.price-card > h1 {
+	font-size: 3em;
+	font-weight: 800;
+	margin: 0;
+}
+.price-card > h4 {
+	color: darkgray;
+}
+.discount {
+	white-space: nowrap;
+	border-radius: 20px;
+	padding: 0.3em 0.1em;
+	background-color: #1a4b3a;
+}
+.discount.no-discount {
+	background-color: #1a4b3a00;
+}
+.price-title {
+	font-size: 2.5em;
+	letter-spacing: 10px;
+	font-weight: 700;
+}
+.main-faq-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.faq-container {
+	margin: 1em 1.6em;
+	color: #bcc9db !important;
+}
+.accordion-container {
+	color: #bcc9db !important;
+
+	margin: auto;
+}
+.accordion-body {
+	color: #bcc9db !important;
+
+	max-width: 633px;
+}
+.accordion-button {
+	background-color: #131417 !important;
+	color: #bcc9db !important;
+
+	border: none;
+	margin-top: 1.6em;
+	border-radius: 15px !important;
+}
+.accordion-button:active,
+.accordion-button:visited,
+.accordion-button:focus {
+	box-shadow: none;
+}
+.accordion {
+	background: none !important;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #131417;
+	border-radius: 15px !important;
+	border: none;
+	color: #ffffff;
+	box-shadow: none;
+}
+.accordion-button::after {
+	filter: invert(100%);
+	border: none;
+	border-radius: 15px !important;
+}
+
+.accordion-item {
+	border: none;
+	background-color: #131417;
+	border-radius: 15px !important;
+}
+.accordion-collapse {
+	background: none !important;
+}
+.accordion-body {
+	background-color: #131417;
+	color: #ffffff;
+	border-radius: 15px !important;
+}
+.faq-container {
+	background-color: #2c2f3300;
+	font-weight: 500;
+}
+.accordion-flush .accordion-collapse {
+	border: none; /* Убираем белую полосу */
+}
+@media (max-width: 1500px) {
+	.upprice-container {
+		display: block;
+	}
+	.price-title {
+		font-size: 1.5em;
+	}
+	.main-faq-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.faq-container {
+		margin: 0 2em;
+	}
+}
+@media (min-width: 1500px) {
+	.accordion-button {
+		width: 633px;
+	}
+}

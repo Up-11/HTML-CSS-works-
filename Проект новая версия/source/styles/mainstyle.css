@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+html {
+	scrollbar-color: #ace6d5 black;
+	scrollbar-width: thin;
+	animation: StartAnim 1s;
+	overflow-x: hidden;
+}
+@keyframes StartAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+a {
+	cursor: pointer;
+	color: #bcc9db;
+	text-decoration: none;
+}
+a:visited,
+a:focus,
+a:hover {
+	color: #bcc9db;
+}
+body {
+	color: #bcc9db;
+	background: linear-gradient(
+		0deg,
+		#02050d 0%,
+		#081826 30%,
+		#0d3640 60%,
+		#16525c 90%,
+		#246b73 100%
+	);
+	background-repeat: no-repeat;
+
+	background-position: center center;
+
+	background-attachment: fixed;
+
+	-webkit-background-size: cover;
+
+	-moz-background-size: cover;
+
+	-o-background-size: cover;
+
+	background-size: cover;
+}
+main {
+	margin: 4em 5em;
+}
+
+.main-content-left-side {
+	max-width: 520px;
+}
+.main-content-left-side > h1 {
+	font-size: 3.5em;
+	font-weight: 600;
+}
+.rounded-text {
+	background-color: #131417;
+	padding: 0.2em 0.7em;
+	border-radius: 30px;
+}
+.rounded-text {
+	display: inline-flex;
+}
+.discription {
+	display: flex;
+	flex-direction: row;
+}
+.top-page-content {
+	display: flex;
+	flex-direction: row;
+}
+.main-content-right-side {
+	margin-left: 9em;
+}
+.main-content-right-side > video {
+	border-radius: 5px;
+	cursor: pointer;
+}
+.button-contaiter {
+	border-radius: 20px;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 1em 1em;
+	background-color: #131417;
+}
+
+.switch-btn {
+	border: solid rgba(128, 128, 128, 0);
+	border-radius: 20px;
+	font-size: 1.4em;
+	padding: 1em 1em;
+	margin: 0 0.5em;
+	transition: border 0.15s ease-in-out;
+}
+.switch-btn:hover {
+	border: solid #35383e;
+}
+.switch-btn:active,
+.switch-btn:focus,
+.switch-btn:active:focus {
+	border: solid #4cd0a1;
+}
+.switch-btn.active {
+	border: solid #4cd0a1;
+}
+
+.text-container > h5 {
+	color: darkgray;
+	width: 400px;
+}
+.text-container > h2 {
+	font-weight: 700;
+}
+.discription-container > button {
+	font-size: 2em;
+}
+.main-page-container {
+	display: flex;
+	flex-direction: row;
+}
+.section-container-left-side {
+	margin-top: 6em;
+}
+.main-content-right-side > img {
+	position: absolute;
+	right: 200px;
+	width: 700px;
+}
+.main-content-right-side {
+	margin-top: 2em;
+}
+.video-contaiter {
+	margin-top: 10em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-top: solid#bcc9db;
+	border-bottom: solid #bcc9db;
+	padding: 3em 0;
+}
+.video-contaiter > video {
+	width: 900px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.lazyload {
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+.lazyload.lazyloaded {
+	opacity: 1;
+}
+.hidden {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+.col > h4 {
+	border-radius: 20px;
+	padding: 1.5em 1em;
+	background-color: #131417;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.content {
+	flex: 1 1 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.content .col {
+	flex: 1 1 50%;
+	padding: 10px;
+}
+.vertical-text {
+	font-size: 3em;
+	white-space: pre;
+	letter-spacing: 10px;
+}
+.vertical-text {
+	flex: 1 1 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	writing-mode: vertical-rl;
+	text-align: center;
+	transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+	.content .col {
+		flex: 1 1 100%;
+	}
+	.vertical-text {
+		flex: 1 1 100%;
+		writing-mode: horizontal-tb;
+		transform: none;
+		margin-bottom: 20px;
+	}
+	.vertical-text {
+		font-size: 1.5em;
+	}
+}
+@media (max-width: 576px) {
+	.main-content-left-side > h1 {
+		font-size: 2.3em;
+	}
+	.button-contaiter {
+		border-radius: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 1em 1em;
+		background-color: #131417;
+	}
+
+	.switch-btn {
+		border: solid rgba(128, 128, 128, 0);
+		border-radius: 20px;
+		font-size: 1em;
+		padding: 1em 1em;
+		margin: 0 0.5em;
+		transition: border 0.15s ease-in-out;
+	}
+}
+@media (max-width: 1200px) {
+	main {
+		margin: 1em 0;
+	}
+	.top-page-content {
+		flex-direction: column;
+	}
+	.main-content-right-side > img {
+		display: none;
+		right: 100px;
+	}
+	.video-contaiter > video {
+		width: 500px;
+	}
+	.switch-btn {
+		margin: 0;
+	}
+}
+@media (max-width: 1500px) {
+	.main-content-right-side > img {
+		right: 0px;
+	}
+}

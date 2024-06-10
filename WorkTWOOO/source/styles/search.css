@@ -1,0 +1,50 @@
+h2 {
+	color: white;
+}
+.main-title-container > h1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.registr-section > h2 {
+	display: inline-flex;
+	font-size: 2em;
+	background: rgba(0, 0, 0, 0.646);
+	padding: 0.5em 2em;
+}
+.dropdown > button {
+	width: 500px;
+	background: rgba(0, 0, 0, 0.646);
+	font-size: 2em;
+	padding: 0.5em 2em;
+	border-radius: 0;
+}
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.main-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.dropdown-menu {
+	width: 500px;
+}
+.registr-section > button {
+	width: 500px;
+	background: rgba(0, 0, 0, 0.646);
+	font-size: 2em;
+	padding: 0.5em 2em;
+	border-radius: 0;
+}
+.dropdown > button > a {
+	color: white;
+	text-decoration: none;
+}
+.dropdown > button > a:visited,
+a:focus,
+a:hover {
+	color: #fff;
+}

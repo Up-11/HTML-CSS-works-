@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Vazirmatn';
+	color: white;
+}
+html {
+	scrollbar-color: rgba(223, 33, 68, 1) black;
+	scrollbar-width: thin;
+}
+body {
+	font-weight: 700;
+}
+.navbar {
+	font-size: 20px;
+	font-weight: 700;
+}
+.nav-icon {
+	margin-right: 1em;
+	margin-bottom: 5px;
+}
+.name {
+	color: rgba(223, 33, 68, 1);
+	font-weight: 900;
+}
+.navbar-brand {
+	padding-bottom: 0;
+	font-size: 25px;
+}
+.navbar-brand:hover {
+	color: rgba(223, 33, 68, 1);
+}
+.active {
+	color: rgba(223, 33, 68, 1) !important;
+}
+
+.btn {
+	font-weight: 700;
+	white-space: nowrap;
+}
+.list-button {
+	display: none;
+}
+@media screen and (max-width: 1000px) {
+	.header-btn {
+		display: none;
+	}
+	.list-button {
+		display: flex;
+	}
+}

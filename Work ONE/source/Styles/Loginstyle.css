@@ -1,0 +1,61 @@
+main {
+	height: 1000px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+}
+.input-place {
+	width: 25em;
+	height: 10em;
+}
+@media (max-width: 700px) {
+	.switch-page-containter {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.login-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.login-button > .btn {
+	font-size: 1em;
+}
+.switch-page-containter {
+	display: flex;
+	flex-direction: row;
+}
+.login-container > a,
+.signup-container > a {
+	text-decoration: none;
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+}
+.signup-container > a > h2 {
+	color: gray;
+	transition: color 0.15s ease-in-out;
+}
+.signup-container > a > h2:hover {
+	color: lightgrey;
+}
+.login-container > a > h2 {
+	color: gray;
+	transition: color 0.15s ease-in-out;
+}
+.login-container > a > h2:hover {
+	color: lightgrey;
+}
+.activate > h2 {
+	color: rgba(223, 33, 68, 1) !important;
+}
+.main-container {
+	margin-top: 10em;
+}

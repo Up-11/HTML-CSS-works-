@@ -1,0 +1,34 @@
+@import 'vars';
+header {
+	background-color: white;
+}
+.container-fluid,
+.navbar {
+	padding: 0;
+}
+.navbar-brand {
+	img {
+		width: 90px;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		margin: 0 12em;
+	}
+	.navbar-collapse {
+		justify-content: center;
+	}
+	.nav-link {
+		padding: 0.1em 3em;
+		transition: all 0.3s ease;
+		border-radius: 30px;
+
+		&:hover {
+			@extend .bg-400;
+			color: #1c1c1c;
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+	}
+}

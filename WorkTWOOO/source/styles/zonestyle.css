@@ -1,0 +1,22 @@
+.zone-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.zone-dropdown {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.main-zone-container {
+	display: flex;
+	flex-direction: column;
+}
+.img-cotainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.stock-container {
+	height: 300px !important;
+}
