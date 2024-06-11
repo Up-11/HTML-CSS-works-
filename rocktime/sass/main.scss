@@ -1,0 +1,204 @@
+.collapse {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+body {
+	background-color: #2f2f2f;
+}
+.nav-item {
+	margin-left: 0.8em;
+	cursor: pointer;
+}
+.top {
+	position: relative;
+	top: 7px;
+}
+.navbar {
+	backdrop-filter: blur(10px) saturate(180%) !important;
+	-webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+	background-color: rgba(0, 0, 0, 0.304) !important;
+}
+.top-page {
+	background-image: url(/img/backgroundimage.png);
+	background-size: cover;
+}
+.top-page-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	.main-info-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-container {
+		background-color: #0c0c0c46;
+		box-shadow: 0px 0px 50px 0px #00000070;
+		padding: 1em 1em;
+		border-radius: 25px;
+		backdrop-filter: blur(10px);
+		.top-info-container {
+			padding: 1em 1em;
+			border-bottom: #9a9a9a70 solid;
+			border-width: 5px;
+			h1 {
+				text-align: center;
+			}
+		}
+		.bottom-info-container {
+			display: flex;
+			flex-direction: row;
+			.side {
+				max-width: 400px;
+				width: 100%;
+				padding: 2em 1em;
+			}
+			.left {
+				border-right: #9a9a9a70 solid;
+				border-width: 5px;
+			}
+		}
+	}
+}
+.istok-web-regular {
+	font-family: 'Istok Web', sans-serif !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+.scroll-down-container {
+	position: relative;
+
+	top: -70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	.scroll-down-btn {
+		background-color: #2d2d2d84;
+		box-shadow: 0px 0px 15px 3px #00000070;
+		padding: 1em 1em;
+		width: 50px;
+		height: 50px;
+
+		text-align: center;
+		border-radius: 50%;
+		cursor: pointer;
+		img {
+			position: relative;
+			right: 7px;
+			bottom: 2px;
+		}
+	}
+}
+.head-name {
+	margin: 1em 1em;
+	font-size: 3em;
+}
+.artists {
+	display: flex;
+	flex-direction: column;
+	.card-container {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		.card {
+			background-color: #3f3f3f;
+			color: white;
+			max-width: 70%;
+			display: flex;
+			flex-direction: row;
+			height: 300px;
+			border-radius: 30px;
+
+			.image {
+				position: relative;
+				right: 210px;
+				bottom: 22px;
+			}
+			.text-container {
+				margin-top: 1.2em;
+				position: relative;
+				right: 190px;
+				h3 {
+					margin-top: 0.4em;
+				}
+			}
+		}
+	}
+}
+#scroll-to-top {
+	cursor: pointer;
+}
+.gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.gallery img {
+	margin: 10px;
+	width: 400px;
+	height: auto;
+	cursor: pointer;
+}
+.news-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	.news-content {
+		display: flex;
+		flex-direction: column;
+		background-color: #262626;
+		padding: 2em 4em;
+		border-radius: 35px;
+		box-shadow: -8px 8px 2px 3px #171717;
+		.news-top {
+			background-color: #212121;
+			padding: 0em 13em;
+			padding-top: 10px;
+			border-radius: 20px;
+		}
+		.news-bottom {
+			margin-top: 20px;
+			background-color: #212121;
+			padding-top: 10px;
+			border-radius: 20px;
+		}
+	}
+}
+.Partnets {
+	img {
+		filter: invert(1);
+	}
+}
+footer {
+	background-color: #03030317;
+	backdrop-filter: blur(10px) saturate(180%) !important;
+	padding: 1em 0em;
+}
+.column-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.column {
+		h2 {
+			a:visited,
+			a:focus,
+			a:hover {
+				color: white !important;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+a:visited,
+a:focus,
+a:hover {
+	color: white !important;
+}
