@@ -1,0 +1,108 @@
+.tags > h6 {
+	display: inline-flex;
+	background-color: crimson;
+	padding: 0.1em 0.1em;
+	flex-wrap: wrap;
+	font-size: 1.1em;
+}
+
+.tags {
+	width: 100%;
+}
+.game-name {
+	color: darkgray;
+}
+.wins {
+	display: flex;
+	flex-direction: row;
+}
+.side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30%;
+}
+.win {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+.win-two {
+	border-left: 2px rgb(156, 156, 156) solid;
+}
+.win-type {
+	text-align: center;
+}
+.win-count {
+	font-size: 3em;
+}
+.win > br {
+	content: '';
+	border-bottom: 4px crimson solid;
+	margin: 20px 20px;
+}
+.profile {
+	background: linear-gradient(0deg, #3f3b3b 0%, #252323 100%);
+	height: auto; /* Изменено с фиксированной высоты на auto */
+	padding: 3em 2em;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end !important;
+	text-align: center;
+}
+.photo-cont > img {
+	margin-left: 20px;
+
+	align-items: center;
+	max-width: 100%;
+	width: 100%;
+}
+.disc {
+	margin-left: 40px;
+}
+@media (max-width: 1000px) {
+	.profile {
+		flex-direction: column;
+	}
+	.side {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.win-count {
+		font-size: 2em;
+	}
+	.tags > h6 {
+		font-size: 1em;
+	}
+	.tags {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.win-count {
+		font-size: 1.5em;
+	}
+	.win > br {
+		margin: 10px 10px;
+	}
+	.tags > h6 {
+		font-size: 0.9em;
+	}
+}
+
+@media (max-width: 400px) {
+	.win-count {
+		font-size: 1.2em;
+		.tags > h6 {
+			font-size: 0.8em;
+		}
+	}
+}

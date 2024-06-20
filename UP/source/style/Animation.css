@@ -1,0 +1,23 @@
+.element-animation {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.element-animation.element-show {
+	opacity: 1;
+	transition: all 1.5s ease-in-out;
+	transform: translateY(0%);
+}
+
+.rating {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: rgb(44, 44, 44);
+}
+.rating-virtual-container {
+	margin-top: 20px;
+	padding-inline: 30px;
+	border-inline: white 0.5px solid;
+}
