@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Golana</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="header__inner container">
+				<a href="#" class="header__logo logo">
+					<img src="images/logo.png" alt="Golana" width=110" class="logo_image"
+					loading="lazy" />
+				</a>
+				<nav class="header__menu hidden-mobile">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="#Main" class="header__menu-link">Главная </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#About" class="header__menu-link">О нас</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#Rent" class="header__menu-link">Аренда </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#Partners" class="header__menu-link">Партнерам </a>
+						</li>
+					</ul>
+				</nav>
+				<a
+					href="https://golanagroup.ru/"
+					type="button"
+					class="header__button button button-transparent hidden-mobile"
+				>
+					Интернет-магазин
+				</a>
+				<button
+					class="button__burger-menu burger-button visible-mobile"
+					onclick="mobileOverlay.showModal()"
+				>
+					<span class="visually-hidden">Открыть навигационное меню</span>
+				</button>
+			</div>
+		</header>
+		<main class="container main-page" id="Main">
+			<section class="main">
+				<div class="main__inner">
+					<h3 class="main__small-text">Лучшее кофе в стране</h3>
+					<h1 class="main__large-text">Компания</h1>
+					<h1 class="main__large-text rotate-text">Golana</h1>
+					<h2 class="main__medium-text">Наш интернет магазин</h2>
+					<div class="main__button-container">
+						<a
+							href="https://golanagroup.ru/"
+							type="button"
+							class="main__button button button-bw"
+						>
+							Перейти
+						</a>
+					</div>
+				</div>
+				<div class="main__card-list margin-top container">
+					<div
+						class="card element-animation"
+						style="
+							background: linear-gradient(
+								45deg,
+								#e65f3d 0%,
+								#b44c31 47%,
+								#8f1d00 100%
+							);
+						"
+					>
+						<h1 class="card__title">На рынке с 2002 года</h1>
+						<h4 class="card__content">
+							Наша компания работает уже более 20 лет, что свидетельствует о
+							нашем опыте и надежности. Это длительное присутствие на рынке
+							позволяет нам лучше понимать потребности клиентов и адаптироваться
+							к изменяющимся условиям.
+						</h4>
+					</div>
+					<div
+						class="card element-animation"
+						style="
+							background: linear-gradient(
+								45deg,
+								#39c08d 0%,
+								#47ae86 47%,
+								#28bd84 100%
+							);
+						"
+					>
+						<h1 class="card__title">Большой выбор</h1>
+						<h4 class="card__content">
+							Мы предлагаем широкий ассортимент товаров, чтобы удовлетворить
+							потребности различных клиентов. Это может включать в себя
+							разнообразие категорий продукции, брендов и ценовых категорий, что
+							позволяет каждому клиенту найти то, что ему нужно.
+						</h4>
+					</div>
+					<div
+						class="card element-animation"
+						style="
+							background: linear-gradient(
+								45deg,
+								#913de6 0%,
+								#8a2fe4 61%,
+								#b06ef2 100%
+							);
+						"
+					>
+						<h1 class="card__title">Удобство</h1>
+						<h4 class="card__content">
+							Мы работаем над тем, чтобы процесс приобретения товаров был
+							максимально удобным для наших клиентов. Это может включать в себя
+							простоту заказа, удобные методы оплаты, качественное обслуживание
+							клиентов и поддержка на всех этапах сотрудничества.
+						</h4>
+					</div>
+				</div>
+			</section>
+			<section class="about container" id="About">
+				<div class="about__row">
+					<h4 class="about__bubble top element-animation">
+						Более 500 клиентов
+					</h4>
+					<h4 class="about__bubble top-right element-animation">
+						На рынке с 2002 года
+					</h4>
+				</div>
+				<h1 class="about__title">Golana Group</h1>
+				<div class="about__row">
+					<h4 class="about__bubble right element-animation">Большой выбор</h4>
+					<h4 class="about__bubble bottom element-animation">Удобство</h4>
+					<h4 class="about__bubble bottom-right element-animation">
+						Более 1000 наименований
+					</h4>
+				</div>
+			</section>
+			<section class="rent container" id="Rent">
+				<div class="rent__inner element-animation">
+					<h2 class="rent__title">Аренда кофейного оборудования</h2>
+					<h4 class="rent__discription">
+						Вам нравится наш кофе и устраивает наша ценовая политика, но у вас
+						нет кофейного оборудования? В этом случае мы можем предложить
+						кофемашину на условиях аренды. При данной форме сотрудничества вы не
+						привязаны к объёму выборки нашей продукции. Более того, на вас будут
+						распространяться скидки на кофе, при условии разовой закупки от 15
+						кг в предоплату. Важно отметить - мы предоставляем оборудование
+						исключительно при условии использования нашего кофе.
+					</h4>
+					<div class="rent__button-container">
+						<a
+							href="tel:+7 (391) 98-656-98"
+							class="rent__phone-number rent__title"
+							>+7 (391) 98-656-98</a
+						>
+
+						<a
+							href="https://golanagroup.ru/company/"
+							type="button"
+							class="rent__button button"
+						>
+							Подробнее
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="partners container" id="Partners">
+				<div class="partners__grid element-animation">
+					<div class="partners__side left">
+						<h2 class="partners__side-title">Условия для партнеров</h2>
+						<div class="partners__disc">
+							<h4>Гарантии, которые вы получите благодаря сотрудничеству:</h4>
+							<ul>
+								<li>Полное соответствие качества продукции</li>
+								<li>Гибкая стоимость, в зависимости от объёма партии</li>
+								<li>Возможность дегустации продукции на этапе выбора</li>
+								<li>
+									Помощь в подборе нужных сортов кофе в соответствии с
+									потребностями вашего бизнеса
+								</li>
+								<li>
+									Личный менеджер, отвечающий за сборку заказов и организацию
+									доставки продукции
+								</li>
+								<li>Своевременная поставка продукции в полном объёме</li>
+							</ul>
+						</div>
+						<a
+							href="https://golanagroup.ru/partners/"
+							type="button"
+							class="partners__button button button-red"
+						>
+							Подробнее
+						</a>
+					</div>
+					<div class="partners__side right">
+						<img src="images/heands.svg" alt="" class="partners_icon" />
+					</div>
+				</div>
+				<h1 class="partners__title title">Почему Golana?</h1>
+				<div class="partners__cards">
+					<div
+						class="partners__card card element-animation"
+						style="background: linear-gradient(45deg, #1c1717 0%, #363535 100%)"
+					>
+						<h4 class="card__content content-up">
+							Цена позволяет поддерживать высокую маржинальность напитков
+						</h4>
+					</div>
+					<div
+						class="partners__card card element-animation"
+						style="background: linear-gradient(45deg, #022331 0%, #094b67 100%)"
+					>
+						<h4 class="card__content">
+							Ассортимент отвечает запросам профессионалов
+						</h4>
+					</div>
+					<div
+						class="partners__card card element-animation"
+						style="background: linear-gradient(45deg, #1f4734 0%, #115535 100%)"
+					>
+						<h4 class="card__content">
+							Потрясающий, насыщенный вкус нравится потребителям
+						</h4>
+					</div>
+					<div
+						class="partners__card card element-animation"
+						style="background: linear-gradient(45deg, #19002e 0%, #2b133e 100%)"
+					>
+						<h4 class="card__content">
+							Подходит для приготовления различных напитков на основе кофе, в
+							том числе и по авторским рецептам
+						</h4>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__inner container">
+				<div class="footer__column">
+					<h4>Навигация</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#Main" class="footer__link">Главная</a>
+						</li>
+						<li class="footer__item">
+							<a href="#About" class="footer__link">О нас</a>
+						</li>
+						<li class="footer__item">
+							<a href="#Rent" class="footer__link">Аренда</a>
+						</li>
+						<li class="footer__item">
+							<a href="#Partners" class="footer__link">Партнеры</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>О компании</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="https://golanagroup.ru/help/" class="footer__link"
+								>Оплата и доставка</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="https://golanagroup.ru/contacts/" class="footer__link"
+								>Контакты</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								href="https://golanagroup.ru/arenda-oborudovania/"
+								class="footer__link"
+								>Аренда оборудования</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="https://golanagroup.ru/partners/" class="footer__link"
+								>Партнерам</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								href="https://golanagroup.ru/company/vacancy/"
+								class="footer__link"
+								>Вакансии</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>Интересно</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="https://shop.golanagroup.ru/blog/" class="footer__link"
+								>Блог о кофе</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="https://shop.golanagroup.ru/sale/" class="footer__link"
+								>Актуальные акции</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>Оставайтесь на связи</h4>
+					<ul class="footer__list horizontal">
+						<li class="footer__item">
+							<a href="https://vk.com/golana_coffee" class="footer__link">
+								<img src="images/icons8-vk-50.png" width="50" alt="" />
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="https://t.me/golana24" class="footer__link">
+								<img src="images/icons8-телеграм-50.png" width="50" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>Наши контакты</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="tel:" class="footer__link"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-telephone-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+									/></svg
+								>+7(391) 98-656-98</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="mail:" class="footer__link"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-envelope-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+									/></svg
+								>sales@golanagroup.ru</a
+							>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link-non-hover"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-house-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"
+									/>
+									<path
+										d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
+									/></svg
+								>г. Красноярск, ул. Калинина 39 "в"</a
+							>
+						</li>
+					</ul>
+				</div>
+				<br class="line" />
+			</div>
+		</footer>
+		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button type="submit" class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="mobile-overlay__body">
+				<h1 class="mobile-overlay__title">Меню</h1>
+				<ul class="mobile-overlay__list">
+					<li class="mobile-overlay__item">
+						<a
+							href="#Main"
+							onclick="mobileOverlay.close()"
+							class="mobile-overlay__link"
+							>Главная</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#About"
+							class="mobile-overlay__link"
+							>О нас</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#Rent"
+							class="mobile-overlay__link"
+							>Аренда</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#Partners"
+							class="mobile-overlay__link"
+							>Партнеры</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://golanagroup.ru/"
+							type="button"
+							class="mobile-overlay__button button button-transparent visible-mobile"
+						>
+							Интернет-магазин
+						</a>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+	</body>
+	<script src="scripts/Animation.js"></script>
+	<script src="scripts/toTop.js"></script>
+	<script src="scripts/HideHeader.js"></script>
+</html>
