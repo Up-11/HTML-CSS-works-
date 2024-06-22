@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Golana</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="header__inner container">
+				<a href="#Main" class="header__logo logo">
+					<img src="images/logo.png" alt="Golana" width=110" class="logo_image"
+					loading="lazy" />
+				</a>
+				<nav class="header__menu hidden-mobile">
+					A
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="#Main" class="header__menu-link">Главная </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#About" class="header__menu-link">О нас</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#Rent" class="header__menu-link">Аренда </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#Partners" class="header__menu-link">Партнерам </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#News" class="header__menu-link">Блог </a>
+						</li>
+					</ul>
+				</nav>
+				<button
+					class="button__burger-menu burger-button visible-mobile"
+					onclick="mobileOverlay.showModal()"
+				>
+					<span class="visually-hidden">Открыть навигационное меню</span>
+				</button>
+			</div>
+		</header>
+		<main class="container main-page"></main>
+		<footer></footer>
+		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button type="submit" class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="mobile-overlay__body">
+				<h1 class="mobile-overlay__title">Меню</h1>
+				<ul class="mobile-overlay__list">
+					<li class="mobile-overlay__item">
+						<a
+							href="#Main"
+							onclick="mobileOverlay.close()"
+							class="mobile-overlay__link"
+							>Главная</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#About"
+							class="mobile-overlay__link"
+							>О нас</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#Rent"
+							class="mobile-overlay__link"
+							>Аренда</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#Partners"
+							class="mobile-overlay__link"
+							>Партнеры</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#News"
+							class="mobile-overlay__link"
+							>Блог</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://golanagroup.ru/"
+							type="button"
+							class="mobile-overlay__button button button-transparent visible-mobile"
+						>
+							Интернет-магазин
+						</a>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+		<button id="scroll-to-top">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="45"
+				height="45"
+				fill="currentColor"
+				class="bi bi-arrow-up-short"
+				viewBox="0 0 16 16"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"
+				/>
+			</svg>
+		</button>
+	</body>
+	<script src="scripts/Animation.js"></script>
+	<script src="scripts/toTop.js"></script>
+</html>
