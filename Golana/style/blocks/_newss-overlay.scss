@@ -9,15 +9,18 @@
 		opacity: 0;
 	}
 
+	&:modal {
+		max-width: 100%;
+		max-height: 100%;
+	}
 	&__body {
 		@include tablet-above {
 			margin-inline: 50px;
+			margin: 2em 4em;
 		}
-		margin: 2em 4em;
 	}
 	&::backdrop {
 		background-color: rgba(0, 0, 0, 0.795);
-		transition: all 0.35s ease-in-out;
 	}
 
 	&__title {
@@ -55,7 +58,9 @@
 		}
 	}
 	&__bottom {
-		margin-top: 1em;
+		@include tablet-above {
+			margin-top: 1em;
+		}
 	}
 }
 .image {

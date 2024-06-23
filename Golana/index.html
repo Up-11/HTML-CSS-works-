@@ -16,19 +16,19 @@
 				<nav class="header__menu hidden-mobile">
 					<ul class="header__menu-list">
 						<li class="header__menu-item">
-							<a href="#Main" class="header__menu-link">Главная </a>
+							<a href="#main" class="header__menu-link">Главная </a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#About" class="header__menu-link">О нас</a>
+							<a href="#about" class="header__menu-link">О нас</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#Rent" class="header__menu-link">Аренда </a>
+							<a href="#rent" class="header__menu-link">Аренда </a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#Partners" class="header__menu-link">Партнерам </a>
+							<a href="#partners" class="header__menu-link">Партнерам </a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#News" class="header__menu-link">Блог </a>
+							<a href="#news" class="header__menu-link">Блог </a>
 						</li>
 					</ul>
 				</nav>
@@ -47,7 +47,7 @@
 				</button>
 			</div>
 		</header>
-		<main class="container main-page" id="Main">
+		<main class="container main-page" id="main">
 			<section class="main">
 				<div class="main__inner">
 					<h3 class="main__small-text">Лучшее кофе в стране</h3>
@@ -124,7 +124,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about container" id="About">
+			<section class="about container" id="about">
 				<div class="about__row">
 					<h4 class="about__bubble top element-animation">
 						Более 500 клиентов
@@ -142,7 +142,7 @@
 					</h4>
 				</div>
 			</section>
-			<section class="rent container" id="Rent">
+			<section class="rent container" id="rent">
 				<div class="rent__inner element-animation">
 					<div class="rent__image-container">
 						<img src="images/coffee.svg" class="rent__image" alt="" />
@@ -176,7 +176,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="partners container" id="Partners">
+			<section class="partners container" id="partners">
 				<div class="partners__grid element-animation">
 					<div class="partners__side left">
 						<h2 class="partners__side-title">Условия для партнеров</h2>
@@ -257,7 +257,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="news container" id="News">
+			<section class="news container" id="news">
 				<h1 class="news__title title">Блог</h1>
 				<div class="news__inner">
 					<div class="news__item-container large-container">
@@ -532,7 +532,7 @@
 				<ul class="mobile-overlay__list">
 					<li class="mobile-overlay__item">
 						<a
-							href="#Main"
+							href="#main"
 							onclick="mobileOverlay.close()"
 							class="mobile-overlay__link"
 							>Главная</a
@@ -541,7 +541,7 @@
 					<li class="mobile-overlay__item">
 						<a
 							onclick="mobileOverlay.close()"
-							href="#About"
+							href="#about"
 							class="mobile-overlay__link"
 							>О нас</a
 						>
@@ -549,7 +549,7 @@
 					<li class="mobile-overlay__item">
 						<a
 							onclick="mobileOverlay.close()"
-							href="#Rent"
+							href="#rent"
 							class="mobile-overlay__link"
 							>Аренда</a
 						>
@@ -557,7 +557,7 @@
 					<li class="mobile-overlay__item">
 						<a
 							onclick="mobileOverlay.close()"
-							href="#Partners"
+							href="#partners"
 							class="mobile-overlay__link"
 							>Партнеры</a
 						>
@@ -565,7 +565,7 @@
 					<li class="mobile-overlay__item">
 						<a
 							onclick="mobileOverlay.close()"
-							href="#News"
+							href="#news"
 							class="mobile-overlay__link"
 							>Блог</a
 						>
@@ -964,7 +964,27 @@
 			</svg>
 		</button>
 	</body>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var menuLinks = document.querySelectorAll('.header__menu-link')
+
+			menuLinks.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault()
+
+					var targetId = this.getAttribute('href').substring(1)
+					var targetElement = document.getElementById(targetId)
+
+					window.scrollTo({
+						top: targetElement.offsetTop,
+						behavior: 'smooth',
+					})
+				})
+			})
+		})
+	</script>
 	<script src="scripts/Animation.js"></script>
 	<script src="scripts/toTop.js"></script>
 	<script src="scripts/HideHeader.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </html>

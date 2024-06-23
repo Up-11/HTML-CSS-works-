@@ -33,8 +33,10 @@
 	height: 400px;
 }
 .feedback {
-	@include column;
-	row-gap: 101px;
+	&__rows {
+		@include column;
+		row-gap: 101px;
+	}
 
 	&__row {
 		@include row;
@@ -178,4 +180,8 @@ table {
 }
 .ul {
 	margin-left: 30px;
+}
+.center {
+	@include row;
+	justify-content: center;
 }

@@ -110,3 +110,28 @@ h4,
 .violet {
 	color: var(--color-main-light);
 }
+
+.feedback__row {
+	display: none;
+}
+
+.feedback__row.active {
+	display: block;
+}
+
+.pagination button {
+	margin: 5px;
+	padding: 10px 15px;
+	border: none;
+	background-color: #f0f0f0;
+
+	cursor: pointer;
+}
+
+.pagination button.active {
+	background-color: #77a632;
+	color: white;
+}
+.pagination {
+	margin-top: 50px;
+}

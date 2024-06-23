@@ -5,6 +5,10 @@
 		margin-top: 40px;
 		flex-wrap: wrap;
 	}
+
+	&__categories {
+		@include column;
+	}
 	&__search {
 		background: transparent;
 		border-radius: 50px;
@@ -30,14 +34,30 @@
 		justify-content: center;
 	}
 
+	&__categories {
+		position: relative;
+	}
+
 	&__categories-text {
 		color: var(--color-dark);
 		border: 2px var(--color-dark) solid;
 		border-radius: var(--border-radius-large);
 		padding: 0.1em 0.6em;
+		margin-bottom: 0;
+		cursor: pointer;
+		z-index: 10;
+		background-color: var(--color-light);
 
 		@include tablet {
 			margin-top: 10px;
+		}
+
+		@include hover {
+			color: #c10505;
+			border-color: #c10505;
+			&:hover + .hidden-categories {
+				display: flex;
+			}
 		}
 	}
 }
@@ -75,4 +95,41 @@
 .card-href {
 	@include row;
 	justify-content: center;
+}
+.hidden-categories {
+	@include column;
+
+	display: none;
+	position: absolute;
+	top: 90%;
+	max-width: 260px;
+	width: 100%;
+	background-color: white;
+	border: 1px solid var(--color-dark);
+	padding: 10px;
+	box-sizing: border-box;
+	row-gap: 20px;
+
+	@include hover {
+		display: flex;
+	}
+	&__item {
+		@include row;
+
+		justify-content: center;
+		color: var(--color-dark);
+		border-radius: var(--border-radius-large);
+		padding: 0.1em 0.3em;
+		cursor: pointer;
+		border: 2px var(--color-dark) solid;
+
+		@include tablet {
+			margin-top: 10px;
+		}
+
+		@include hover {
+			color: #c10505;
+			border-color: #c10505;
+		}
+	}
 }

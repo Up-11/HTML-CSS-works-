@@ -1,26 +1,3 @@
-function onEntry(entry) {
-	entry.forEach(change => {
-		if (change.isIntersecting) {
-			change.target.classList.add('element-show')
-		}
-	})
-}
-let movespeed
-if (window.innerWidth > 1000) {
-	movespeed = [0.6]
-} else {
-	movespeed = [0.1]
-}
-let options = {
-	threshold: movespeed,
-}
-let observer = new IntersectionObserver(onEntry, options)
-let elements = document.querySelectorAll('.element-animation')
-
-for (let elm of elements) {
-	observer.observe(elm)
-}
-
 document.addEventListener('DOMContentLoaded', function () {
 	const searchInput = document.querySelector('.input')
 	const menuItems = document.querySelectorAll('.service-card ')
@@ -34,6 +11,35 @@ document.addEventListener('DOMContentLoaded', function () {
 			} else {
 				item.style.display = 'none'
 			}
+		})
+	})
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+	const categoryLinks = document.querySelectorAll('.hidden-categories__item')
+	const grids = document.querySelectorAll('.col')
+
+	categoryLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			event.preventDefault()
+			const category = this.getAttribute('data-category')
+
+			grids.forEach(grid => {
+				const categoryButtton = document
+					.getElementById('category')
+					.addEventListener('click', () => {
+						grid.style.display = 'flex'
+						grid.style.justifyContent = 'center'
+					})
+				if (
+					grid.getAttribute('data-category') === category ||
+					category === 'all'
+				) {
+					grid.style.display = 'flex'
+				} else {
+					grid.style.display = 'none'
+				}
+			})
 		})
 	})
 })
