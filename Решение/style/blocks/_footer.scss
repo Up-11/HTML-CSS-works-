@@ -1,67 +1,57 @@
 .footer {
-	width: 100%;
-	margin-top: 30px;
-	font-weight: 400;
-	color: var(--color-light);
-	background-color: rgb(20, 18, 18);
+	@include row;
+	padding-inline: 10px;
+	justify-content: space-between;
 
-	&__inner {
-		padding: 3em 4em;
+	border-top: #958f8f 4px solid;
+	margin-top: 20px;
+	padding-top: 20px;
 
-		@include row;
-		justify-content: space-around;
-		column-gap: 80px;
-
-		@include tablet {
-			@include column;
-			justify-content: center;
-		}
+	@include mobile {
+		@include column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
 
-	&__item {
-		line-height: 40px;
+	&__logo {
+		width: 150px;
 	}
-
-	&__link-non-hover {
-		color: var(--color-gray-alt);
-	}
-
-	&__link {
-		color: var(--color-gray-alt);
-		font-weight: lighter;
-		@include hover {
-			color: var(--color-main-light);
-		}
-	}
-
-	.horizontal li {
-		display: inline-block;
-		transition: all 0.2s ease-in-out;
-
-		@include hover {
-			transform: scale(1.05);
-		}
-	}
-
 	&__column {
-		@include tablet {
-			margin-top: 30px;
-		}
-		h4 {
-			margin: 0;
-			margin-bottom: 10px;
+		@include column;
+
+		@include mobile {
+			margin-top: 40px;
 		}
 	}
 }
-.me {
-	margin-right: 5px;
+.vertical {
+	@include row;
 }
-.bi-telephone-fill,
-.bi {
-	margin-right: 5px;
-	position: relative;
-	top: 2px;
+
+.icon-container {
+	column-gap: 20px;
 }
-.bi-envelope-fill {
-	top: 4px;
+.icon {
+	width: 80px;
+	fill: var(--color-gray);
+	transition: all 0.1s ease-in-out !important;
+}
+.tg {
+	@include hover {
+		fill: #0088cc;
+	}
+}
+.vk {
+	@include hover {
+		fill: #597da3;
+	}
+}
+.wp {
+	@include hover {
+		fill: #43d854;
+	}
+}
+.bottom {
+	justify-content: flex-end;
 }

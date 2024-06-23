@@ -13,9 +13,11 @@
 		@include tablet-above {
 			margin-inline: 50px;
 		}
+		margin: 2em 4em;
 	}
 	&::backdrop {
 		background-color: rgba(0, 0, 0, 0.795);
+		transition: all 0.35s ease-in-out;
 	}
 
 	&__title {

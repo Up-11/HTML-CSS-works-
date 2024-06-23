@@ -1,0 +1,78 @@
+.services {
+	&__top-page {
+		@include row;
+		justify-content: center;
+		margin-top: 40px;
+		flex-wrap: wrap;
+	}
+	&__search {
+		background: transparent;
+		border-radius: 50px;
+		outline: none;
+		border: black 2px solid;
+		font-size: 40px;
+
+		@include tablet {
+			font-size: 20px;
+			margin-top: 25px;
+		}
+		@include mobile {
+			margin-left: 30px;
+		}
+
+		&:focus {
+			border-color: #c10505;
+		}
+	}
+
+	&__grid {
+		@include row;
+		justify-content: center;
+	}
+
+	&__categories-text {
+		color: var(--color-dark);
+		border: 2px var(--color-dark) solid;
+		border-radius: var(--border-radius-large);
+		padding: 0.1em 0.6em;
+
+		@include tablet {
+			margin-top: 10px;
+		}
+	}
+}
+.search-icon {
+	width: 50px;
+
+	position: relative;
+	top: 2px;
+	padding: 5px;
+	@include tablet {
+		top: 22px;
+		padding: 5px;
+		width: 36px;
+		right: 60px;
+	}
+	right: 80px;
+	fill: black;
+}
+.search-input {
+	@include row;
+}
+.services__input:focus-within + .icon-cont .search-icon {
+	fill: #c10505;
+}
+.name {
+	font-weight: 400;
+}
+.poster {
+	width: 200px;
+}
+.service-card,
+.card-containter {
+	width: 200px;
+}
+.card-href {
+	@include row;
+	justify-content: center;
+}

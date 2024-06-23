@@ -3,23 +3,19 @@
 	height: 100vh;
 	margin: 0;
 	border: none;
-	padding: 16px 30px;
+	padding: 25px 0px;
 	transition: all 0.3s ease-in-out;
-	background: linear-gradient(
-		90deg,
-		#f9d36c 0%,
-
-		#fbe198 100%
-	);
+	background: #3f3a8cfd;
+	color: white;
 
 	&:not([open]) {
 		display: block;
-		transform: translateX(200%);
+		transform: scale(0);
 	}
 
 	&__title {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 	&__close-button-wrapper {
 		display: flex;
@@ -32,21 +28,27 @@
 
 	&__body {
 		padding-top: 40px;
+		list-style: none;
+		margin-left: 10px;
 	}
 
 	&__list {
-		@include flex-center;
-
+		justify-content: flex-start;
 		flex-direction: column;
-		row-gap: 70px;
+		list-style: none;
 		min-height: 70vh;
 	}
 
 	&__link {
+		list-style: none;
 		font-size: 25px;
 	}
 
 	&__button {
 		font-size: 25px;
+	}
+
+	&__item {
+		margin-top: 60px;
 	}
 }

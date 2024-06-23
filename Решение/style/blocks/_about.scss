@@ -1,0 +1,181 @@
+.about {
+	&__image-container {
+		@include row;
+		justify-content: center;
+		margin-top: var(--margin-default);
+
+		img {
+			width: 800px;
+		}
+	}
+
+	&__text {
+		color: var(--color-main-light);
+		@include row;
+		justify-content: center;
+		margin-top: 40px;
+
+		p {
+			width: 800px;
+			font-size: 30px;
+		}
+	}
+
+	&__map-container {
+		@include row;
+		font-weight: 400;
+		column-gap: 60px;
+		flex-wrap: wrap;
+	}
+}
+#map {
+	width: 1000px;
+	height: 400px;
+}
+.feedback {
+	@include column;
+	row-gap: 101px;
+
+	&__row {
+		@include row;
+		justify-content: center;
+		column-gap: 60px;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		margin-top: 30px;
+	}
+}
+.dark {
+	color: var(--color-dark);
+}
+.row-title {
+	font-weight: 500;
+	max-width: 500px;
+
+	@include mobile-above {
+		width: 100%;
+	}
+}
+.row-content {
+	font-weight: 400;
+	max-width: 800px;
+
+	@include mobile-above {
+		width: 100%;
+	}
+
+	@include tablet {
+		justify-content: center;
+	}
+}
+.styled-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table {
+	color: var(--color-dark) !important;
+}
+.styled-table thead tr {
+	background-color: #add8e6;
+	text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+	background-color: transparent;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+	background-color: #add8e6;
+}
+
+.styled-table tbody tr:hover {
+	background-color: #ddd;
+}
+
+.styled-table th {
+	background-color: #add8e6;
+	color: #333;
+}
+.page {
+	@include row;
+
+	@include mobile {
+		@include column;
+	}
+}
+.side {
+	@include column;
+	margin: 2em 2em;
+}
+.left {
+	@include tablet-above {
+		width: 60%;
+	}
+}
+.right {
+	@include tablet-above {
+		width: 40%;
+	}
+}
+.text-under-img,
+.image-cont {
+	@include row;
+
+	justify-content: center;
+	text-align: center;
+}
+.text-page {
+	margin-top: 20px;
+	@include fluid-text(35, 20);
+
+	line-height: 50px;
+}
+.custom-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid #0c82f1; /* Синий цвет рамки */
+	font-size: 18px;
+}
+
+.custom-table thead tr {
+	background: linear-gradient(
+		to right,
+		#ff7e5f,
+		#feb47b
+	); /* Градиент от оранжевого до розового */
+	color: white;
+}
+
+.custom-table th,
+.custom-table td {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.custom-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.custom-table tbody tr:nth-of-type(odd) {
+	background-color: #add8e6; /* Светло-голубой цвет */
+}
+
+.custom-table tbody tr:hover {
+	background-color: #ddd;
+}
+
+.custom-table th {
+	color: #333;
+}
+.ul {
+	margin-left: 30px;
+}

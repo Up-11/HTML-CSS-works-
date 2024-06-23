@@ -15,3 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 })
+document.getElementById('scrollButton').addEventListener('click', function () {
+	scrollPage()
+})
+
+function scrollPage() {
+	const scrollDistance = 800
+	window.scrollBy({
+		top: scrollDistance,
+		left: 0,
+		behavior: 'smooth',
+	})
+}

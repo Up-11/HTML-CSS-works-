@@ -6,11 +6,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			rel="stylesheet"
+			href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style/style.css" />
-		<title>Решение</title>
+		<title>Услуги</title>
 	</head>
 	<body>
 		<header class="header" id="header">
@@ -46,57 +50,161 @@
 			</div>
 		</header>
 		<main>
-			<section class="main">
-				<h1 class="title-violet title">
-					Хочешь, что бы о тебе узнали? <br />
-					Решение есть!
-				</h1>
-				<div class="main__image-wrapper container">
-					<img src="images/main-image.png" alt="" class="main__image image" />
-				</div>
-				<div class="main__scroll-button-wrapper">
-					<div class="border-wrapper" id="scrollButton">
-						<h3 class="main__scroll-button">
-							Примеры <br />
-							работ
-						</h3>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="65"
-							height="65"
-							fill="currentColor"
-							class="bi bi-chevron-double-down"
-							viewBox="0 0 16 16"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+			<section class="services">
+				<h1 class="title-violet title">Все наши услуги представлены ниже</h1>
+				<div class="services__top-page">
+					<div class="search-input">
+						<div class="services__input">
+							<input
+								class="input services__search"
+								type="search"
+								name="Search"
+								placeholder="Поиск..."
+								size="25"
 							/>
-							<path
-								fill-rule="evenodd"
-								d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-							/>
-						</svg>
+						</div>
+						<div class="icon-cont">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								class="search-icon"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="services__categories">
+						<h2 class="services__categories-text">Категории</h2>
 					</div>
 				</div>
-				<div class="main__works-container">
-					<div class="work">
-						<div class="work__text-container">
-							<h3 class="work__text">Доставка суши и роллов “ПаНDa Хауз”</h3>
+
+				<div class="services__grid">
+					<div class="grid row row-cols-lg-4 row-cols-sm-1 row-cols-md-2 my-5">
+						<div class="col my-3">
+							<a class="card-href" href="service-2.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image.png" alt="" />
+										<h4 class="violet name">
+											Изготовление вывесок и объемных букв с алюминиевым бортом
+										</h4>
+									</div>
+								</div>
+							</a>
 						</div>
-						<img src="images/work-image-1.png" class="work__image" />
-					</div>
-					<div class="work">
-						<div class="work__text-container">
-							<h3 class="work__text">Одежда с пропиткой от клещей “ПОКРОВ”</h3>
+						<div class="col my-3">
+							<a class="card-href" href="service-3.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-2.png" alt="" />
+										<h4 class="violet name">Ремонт рекламных конструкций</h4>
+									</div>
+								</div>
+							</a>
 						</div>
-						<img src="images/work-image-3.png" class="work__image" />
-					</div>
-					<div class="work">
-						<div class="work__text-container">
-							<h3 class="work__text">Детский развивающий центр “СЁМА”</h3>
+						<div class="col my-3">
+							<a class="card-href" href="service-1.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-3.png" alt="" />
+										<h4 class="violet name">Ролл-ап стенды</h4>
+									</div>
+								</div>
+							</a>
 						</div>
-						<img src="images/work-image-2.png" class="work__image" />
+						<div class="col my-3">
+							<a class="card-href" href="service-4.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-4.png" alt="" />
+										<h4 class="violet name">Печать баннеров</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-5.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-5.png" alt="" />
+										<h4 class="violet name">Наклейки на заказ в Красноярске</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-6.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-6.png" alt="" />
+										<h4 class="violet name">Календари и ежедневники</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-7.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-7.png" alt="" />
+										<h4 class="violet name">Брендирование авто</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-8.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-8.png" alt="" />
+										<h4 class="violet name">Лазерная резка и гравировка</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-9.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-9.png" alt="" />
+										<h4 class="violet name">Плоттерная резка</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-10.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-10.png" alt="" />
+										<h4 class="violet name">Объемные буквы из пенопласта</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-11.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-11.png" alt="" />
+										<h4 class="violet name">Номерки</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col my-3">
+							<a class="card-href" href="service-12.html">
+								<div class="card-containter">
+									<div class="service-card">
+										<img class="poster" src="images/grid-image-12.png" alt="" />
+										<h4 class="violet name">Бейджи</h4>
+									</div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>

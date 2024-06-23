@@ -20,3 +20,20 @@ let elements = document.querySelectorAll('.element-animation')
 for (let elm of elements) {
 	observer.observe(elm)
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+	const searchInput = document.querySelector('.input')
+	const menuItems = document.querySelectorAll('.service-card ')
+
+	searchInput.addEventListener('input', function () {
+		const filter = searchInput.value.toLowerCase()
+		menuItems.forEach(function (item) {
+			const title = item.querySelector('.name').textContent.toLowerCase()
+			if (title.includes(filter)) {
+				item.style.display = ''
+			} else {
+				item.style.display = 'none'
+			}
+		})
+	})
+})
