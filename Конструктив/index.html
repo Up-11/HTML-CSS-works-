@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/styles.css" />
+		<link rel="stylesheet" href="style/itc-slider.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="scripts/itc-slider.js" defer></script>
+
+		<title>Конструктив</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="" class="header__logo visible-mobile">
+				<img src="images/icon.png" width="137" alt="" />
+			</a>
+			<button id="openMenuButton" class="burger-button hidden-mobile">
+				<span class="visually-hidden">Закрыть меню навигации</span>
+			</button>
+			<ul class="header__menu-list hidden-mobile">
+				<li class="header__item">
+					<a href="" class="header__link">контакты</a>
+				</li>
+				<li class="header__item">
+					<a href="" class="header__link">навигация</a>
+				</li>
+				<li class="header__item">
+					<a href="" class="header__logo">
+						<img src="images/icon.png" width="137" alt="" />
+					</a>
+				</li>
+				<li class="header__item">
+					<a href="" class="header__link">объекты</a>
+				</li>
+				<li class="header__item">
+					<a href="" class="header__link">поддержка</a>
+				</li>
+			</ul>
+			<button
+				class="button__burger-menu burger-button visible-mobile"
+				onclick="mobileOverlay.showModal()"
+			>
+				<span class="visually-hidden">Открыть навигационное меню</span>
+			</button>
+		</header>
+		<div id="overlay" class="overlay"></div>
+		<nav class="nav" id="nav">
+			<ul class="nav__menu-list">
+				<li class="nav__item nav__item--top-left">
+					<a href="" class="nav__link header__link">Готовые участки</a>
+				</li>
+				<li class="nav__item nav__item--top-center">
+					<a href="" class="nav__link header__link">Объекты</a>
+				</li>
+				<li class="nav__item nav__item--top-right">
+					<a href="" class="nav__link header__link">Поддержка</a>
+				</li>
+				<li class="nav__item nav__item--middle-left">
+					<a href="" class="nav__link header__link">Дом под ключ</a>
+				</li>
+				<li class="nav__item nav__item--bottom-center">
+					<a href="" class="nav__logo">
+						<img src="images/icon.png" width="137" alt="" />
+					</a>
+				</li>
+				<li class="nav__item nav__item--middle-right">
+					<a href="" class="nav__link header__link">Контакты</a>
+				</li>
+				<li class="nav__item --middle-center">
+					<a href="" class="nav__link header__link">Связаться с нами</a>
+				</li>
+			</ul>
+			<button
+				id="closeMenuButton"
+				class="mobile-overlay__close-button cross-button"
+			>
+				<span class="visually-hidden">Закрыть меню навигации</span>
+			</button>
+		</nav>
+		<main class="light">
+			<section class="hero">
+				<div class="hero__inner">
+					<div class="hero__content">
+						<h1 class="hero__title">Строительство домов в Красноярске</h1>
+						<h2 class="hero__disc">По индвивидуальному или готовому проекту</h2>
+					</div>
+				</div>
+				<div class="scroll__button-wrapper">
+					<a href="#slider" class="scroll__button">
+						<h2>Наши проекты</h2>
+						<span class="scroll__buttton-icon"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="82"
+								height="48"
+								fill="currentColor"
+								class="bi bi-chevron-down"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+								/></svg
+						></span>
+					</a>
+				</div>
+			</section>
+			<section class="slider" id="slider">
+				<div class="itc-slider" data-slider="itc-slider" data-loop="false">
+					<div class="itc-slider-wrapper">
+						<div class="itc-slider-items">
+							<div class="itc-slider-item">
+								<img src="/images/dom1.png" alt="" />
+							</div>
+							<div class="itc-slider-item">
+								<img src="/images/dom2.png" alt="" />
+							</div>
+							<div class="itc-slider-item">
+								<img src="/images/dom31.png" alt="" />
+							</div>
+							<div class="itc-slider-item">
+								<img
+									src="/images/dji_fly_20220921_094300_192_1663730643283_photo 1.png"
+									alt=""
+								/>
+							</div>
+							<div class="itc-slider-item">
+								<img
+									src="/images/dji_fly_20230728_175314_159_1690543082915_photo 1.png"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<button class="itc-slider-btn itc-slider-btn-prev"></button>
+					<button class="itc-slider-btn itc-slider-btn-next"></button>
+				</div>
+				<div class="look-all-wrapper">
+					<a class="look-all" href="">Смотреть все</a>
+				</div>
+			</section>
+			<section class="form">
+				<div class="form__inner">
+					<h2 class="form__title">
+						Получите предварительный расчет стоимости дома
+					</h2>
+					<div class="form__input-wrapper">
+						<input class="input" type="text" name="" id="" placeholder="Имя" />
+						<input
+							class="input"
+							type="tel"
+							name=""
+							id=""
+							placeholder="Номер телефона"
+						/>
+						<div class="checkbox">
+							<input type="checkbox" id="checkbox" />
+							<label for="checkbox">
+								<h6>
+									Нажимая на кнопку, вы соглашаетесь на обработку персональных
+									данных.
+								</h6>
+							</label>
+						</div>
+					</div>
+
+					<div class="look-all-wrapper">
+						<a class="look-all send-button" href="">Отправить</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="col">
+				<h3><ООО> Конструктив</h3>
+			</div>
+			<div class="col">
+				<h3>
+					KonKonstruktiv.dom@gmail.com
+					<p></p>
+					+7 (999) 999-99-99
+				</h3>
+			</div>
+		</footer>
+		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button type="submit" class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="mobile-overlay__body">
+				<h1 class="mobile-overlay__title">Меню</h1>
+				<ul class="mobile-overlay__list">
+					<li class="mobile-overlay__item">
+						<a href="index.html" class="mobile-overlay__link">контакты</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="services.html" class="mobile-overlay__link">навигация</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="about.html" class="mobile-overlay__link">объекты</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="feedback.html" class="mobile-overlay__link">поддержка</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="feedback.html" class="mobile-overlay__link"
+							>Готовые участки</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="feedback.html" class="mobile-overlay__link"
+							>Дом под ключ</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="feedback.html" class="mobile-overlay__link">Контакты</a>
+					</li>
+					<li class="mobile-overlay__item">
+						<a href="feedback.html" class="mobile-overlay__link"
+							>Связаться с нами</a
+						>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+	</body>
+	<script src="scripts/OpenMenu.js"></script>
+</html>

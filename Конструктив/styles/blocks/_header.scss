@@ -1,0 +1,153 @@
+.header {
+	@include f-row;
+
+	position: relative;
+	padding-top: 30px;
+
+	@include desktop {
+		padding-top: 10px;
+	}
+
+	@include mobile {
+		padding: 15px;
+		justify-content: space-between;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 40px;
+
+		@include tablet {
+			column-gap: 30px;
+		}
+	}
+
+	&__menu-list {
+		@include f-row;
+
+		width: 100%;
+		margin-right: 65px;
+		justify-content: space-around;
+		align-items: center;
+		column-gap: 40px;
+
+		@include desktop {
+			column-gap: 20px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		height: 48px;
+		font-size: 20px;
+
+		@include hover {
+			&::after {
+				width: 100%;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			translate: -50%;
+			width: 0;
+			height: 2px;
+			background-color: currentColor;
+			transition-duration: inherit;
+		}
+	}
+}
+
+.nav {
+	position: absolute;
+	max-width: 100%;
+	width: 100%;
+	top: -50%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	height: 50vh;
+	align-items: center;
+	justify-items: center;
+	background-color: white;
+	transition: top 0.5s ease-in-out;
+	z-index: 10;
+}
+
+.nav.open {
+	top: 0;
+}
+
+.nav__menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: contents;
+}
+
+.nav__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__item--top-left {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.nav__item--top-center {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.nav__item--top-right {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+}
+
+.nav__item--middle-left {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.nav__item--middle-center {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.nav__item--middle-right {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+.nav__item--bottom-center {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+}
+.nav__link {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+.nav__logo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.overlay__close-button-wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+.cross-button {
+	justify-self: start;
+	margin-left: 20px;
+}

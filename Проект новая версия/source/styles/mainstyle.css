@@ -3,6 +3,7 @@
 	padding: 0;
 	font-family: 'PT Sans', sans-serif;
 }
+
 html {
 	scrollbar-color: #ace6d5 black;
 	scrollbar-width: thin;
@@ -134,7 +135,7 @@ main {
 }
 .main-content-right-side > img {
 	position: absolute;
-	right: 200px;
+	right: 50px;
 	width: 700px;
 }
 .main-content-right-side {
